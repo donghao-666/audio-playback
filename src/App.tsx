@@ -20,10 +20,13 @@ function App() {
 
   return (
     <div>
-      <textarea placeholder='请输入文字' value={value} onChange={onChange}></textarea>
-      <button onClick={() => {
-        voicePlay(value)
-      }}>播放</button>
+      <div><textarea className='textarea' placeholder='请输入文字后点击播放按钮' value={value} onChange={onChange}></textarea></div>
+      <div>
+        <button onClick={() => {
+          voicePlay(value)
+        }}>播放</button>
+      </div>
+      
     </div>
   )
 }
